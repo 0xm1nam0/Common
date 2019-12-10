@@ -21,3 +21,4 @@
 #-renamesourcefileattribute SourceFile
 #-----------------
 -keep class com.blankj.utilcode.**{*;}
+-keep class com.minamo.**{*;}

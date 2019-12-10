@@ -12,14 +12,12 @@ android {
         versionCode 1
         versionName "1.0.4"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
         release {
-            minifyEnabled true
-            consumerProguardFiles  'proguard-rules.pro'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
@@ -38,9 +36,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:support-v4:27.1.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.android.support:support-annotations:27.1.1'
     api "com.google.code.gson:gson:2.6.2"
 
@@ -50,6 +45,7 @@ dependencies {
 }
 
 
+/*
 // 生成sourceJar和javaDocJar构件
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -68,12 +64,14 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     from javadoc.destinationDir
 }
 
+*/
 /*task classesJar(type: Jar) {
     from "$buildDir/intermediates/classes/release"
-}*/
+}*//*
+
 
 artifacts {
 //    archives classesJar
     archives javadocJar
     archives sourcesJar
-}
+}*/
