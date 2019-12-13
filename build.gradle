@@ -38,14 +38,13 @@ task clean(type: Delete) {
 ext {
 //    JavaVersion.VERSION_1_8 = '1.8'
 //    JavaVersion.VERSION_1_8 = '1.8'
-    releaseVersionCode = 1
-    releaseVersionName = '1.0.0'
+    androidVersionCode = 1
+    androidVersionName = '1.1.0'
 
-    androidCompileSdkVersion = 26
-    androidBuildToolsVersion = '26.1.0'
+    androidCompileSdkVersion = 28
     androidSupportSdkVersion = '28.0.0'
-    minSdkVersion = 16
-    targetSdkVersion = 24
+    androidMinSdkVersion = 17
+    androidTargetSdkVersion = 28
 
     junitVersion = '4.12'
 

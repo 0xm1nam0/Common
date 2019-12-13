@@ -1,8 +1,8 @@
-package com.minamo.common;
+package com.minamo.commonapp;
 
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.minamo.utils.LoggerUtils;
 
